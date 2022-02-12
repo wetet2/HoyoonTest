@@ -5,7 +5,7 @@ import "react-grid-layout/css/styles.css";
 import "react-resizable/css/styles.css";
 import "./style.scss";
 
-import { increment, decrement, increment2, decrement2 } from "../../store";
+import { increment, decrement, increment2, decrement2 } from "~/store";
 import Comp1 from "./Comp1";
 import Comp2 from "./Comp2";
 import DragItems from "./DragItems";
@@ -73,11 +73,10 @@ const Dynamic = () => {
   };
 
   const onLayoutChange = (a, b) => {
-    console.log(1111, a, b);
+    console.info("onLayoutChange:", a, b);
   };
 
   const onDrop = (layouts, layout, _event) => {
-    console.log(1111, layouts, layout, _event);
     const id = _event.dataTransfer.getData("id");
     layout.i = id;
     addItem(layout);
@@ -93,8 +92,6 @@ const Dynamic = () => {
       <div>
         <button onClick={() => handleCounter(true)}>더하기 1</button>
         <button onClick={() => handleCounter(false)}>빼기 1</button>
-      </div>
-      <div>
         <button onClick={() => handleCounter2(true)}>더하기 2</button>
         <button onClick={() => handleCounter2(false)}>빼기 2</button>
       </div>

@@ -28,5 +28,14 @@ module.exports = {
         exclude: ["node_modules", ".cache", "public"],
       },
     },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "~": "./src",
+        },
+        extensions: ["js", "jsx"],
+      },
+    },
   ],
 };
