@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  /* position: fixed;
+  overflow: hidden; */
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.div1 {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  font-size: 50px;
+  border-top: 10px solid blue;
+}
+.div2 {
+  flex: 1;
+  border-top: 1px solid #000;
+  border-bottom: 10px solid red;
+  font-size: 50px;
+}
+
+.inner1 {
+  height: 1000px;
+  overflow: auto;
+  border: 5px solid green;
+}
+
+
+.inner2 {
+  height: 100px;
+  overflow: auto;
+  border: 5px solid purple;
+
+}
+.inner2 p {
+  height: 1000px;
+  border: 5px solid gold;
+}

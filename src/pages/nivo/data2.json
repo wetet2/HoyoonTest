@@ -1,0 +1,25 @@
+{
+   "name": "stack",
+   "color": "hsl(300, 70%, 50%)",
+   "children": [{
+         "name": "cchart",
+         "loc": 197772
+      },
+      {
+         "name": "xAxis",
+         "loc": 189678
+      },
+      {
+         "name": "yAxis",
+         "loc": 154924
+      },
+      {
+         "name": "layers",
+         "loc": 52620
+      }, 
+      {
+         "name": "outline",
+         "loc": 186871
+      }
+   ]
+}
